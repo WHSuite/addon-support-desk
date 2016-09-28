@@ -1,0 +1,39 @@
+.ticket {
+    height: 100%
+}
+.ticket .staff .ticket-sidebar {
+    background: rgba(68,140,202,0.2);
+    border-right: 1px solid rgba(68,140,202,0.2)
+}
+.ticket .staff .ticket-body {
+    background: #fff;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #fff), color-stop(1, rgba(68,140,202,0.05)));
+    background: -ms-linear-gradient(bottom, #fff, rgba(68,140,202,0.05));
+    background: -moz-linear-gradient(center bottom, #fff 0, rgba(68,140,202,0.05) 100%);
+    background: -o-linear-gradient(rgba(68,140,202,0.05), #fff);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='rgba(68, 140, 202, 0.05)', endColorstr='#ffffff', GradientType=0)
+}
+.ticket .ticket-body {
+    padding: 20px;
+    height: 100%;
+}
+.ticket .ticket-sidebar {
+    height: 100%;
+    background: #e4f4e9;
+    border-right: 1px solid #CEE6D6;
+}
+.ticket .ticket-sidebar img {
+    padding-top: 10px
+}
+.ticket .ticket-sidebar span:last-child {
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.ticket .ticket-item {
+    height: 100%;
+    border-bottom: 1px solid #ddd;
+    margin: 0
+}
+.ticket .ticket-item:last-child {
+    border-bottom: none
+}

@@ -1,0 +1,15 @@
+{
+    "name": "whsuite/addon-support-desk",
+    "type": "whsuite-addon",
+    "description": "Support Desk plugin for use within WHSuite",
+    "license": "Private",
+    "authors": [
+        {
+            "name": "WHSuite",
+            "email": "info@whsuite.com"
+        }
+    ],
+    "require": {
+        "php-mime-mail-parser/php-mime-mail-parser": "2.*"
+    }
+}

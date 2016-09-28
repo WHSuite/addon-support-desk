@@ -1,0 +1,244 @@
+{
+    "name": "English",
+    "slug": "en",
+    "is_active": "1",
+    "language_code": "en",
+    "text_direction": "LTR",
+    "addon": "support_desk",
+    "Strings": [
+        {
+            "slug": "supportdesk",
+            "text": "Support"
+        },
+        {
+            "slug": "supportdesk-tickets",
+            "text": "Tickets"
+        },
+        {
+            "slug": "supportdepartment_management",
+            "text": "Support Departments"
+        },
+        {
+            "slug": "supportticketpriority_management",
+            "text": "Ticket Priorities"
+        },
+        {
+            "slug": "supportdepartment_add",
+            "text": "Add Support Department"
+        },
+        {
+            "slug": "supportdepartment_edit",
+            "text": "Edit Support Department"
+        },
+        {
+            "slug": "notification_email",
+            "text": "Notification Email"
+        },
+        {
+            "slug": "piping",
+            "text": "Piping"
+        },
+        {
+            "slug": "auto_respond",
+            "text": "Auto Respond Email"
+        },
+        {
+            "slug": "inbox_name",
+            "text": "Inbox Name"
+        },
+        {
+            "slug": "mark_as",
+            "text": "Mark message as"
+        },
+        {
+            "slug": "piping_email",
+            "text": "Piping Email Address"
+        },
+        {
+            "slug": "supportticketpriority_add",
+            "text": "Add Ticket Priority"
+        },
+        {
+            "slug": "supportticketpriority_edit",
+            "text": "Edit Ticket Priority"
+        },
+        {
+            "slug": "label_color",
+            "text": "Label Color"
+        },
+        {
+            "slug": "supportticket_management",
+            "text": "Support Tickets"
+        },
+        {
+            "slug": "supportticket_add",
+            "text": "Create Ticket"
+        },
+        {
+            "slug": "supportticket_edit",
+            "text": "Edit Ticket"
+        },
+        {
+            "slug": "supportticket_view",
+            "text": "View Ticket"
+        },
+        {
+            "slug": "priority",
+            "text": "Priority"
+        },
+        {
+            "slug": "department",
+            "text": "Department"
+        },
+        {
+            "slug": "new_message",
+            "text": "New Reply"
+        },
+        {
+            "slug": "awaiting_reply",
+            "text": "Awaiting Reply"
+        },
+        {
+            "slug": "on_hold",
+            "text": "On Hold"
+        },
+        {
+            "slug": "closed",
+            "text": "Closed"
+        },
+        {
+            "slug": "supportticket_delete",
+            "text": "Delete Ticket"
+        },
+        {
+            "slug": "ticket_overview",
+            "text": "Ticket Overview"
+        },
+        {
+            "slug": "ticket_discussion",
+            "text": "Ticket Discussion"
+        },
+        {
+            "slug": "submit_reply",
+            "text": "Submit Reply"
+        },
+        {
+            "slug": "reply",
+            "text": "Reply"
+        },
+        {
+            "slug": "set_ticket_status",
+            "text": "Reply and amend ticket status to"
+        },
+        {
+            "slug": "port",
+            "text": "Port"
+        },
+        {
+            "slug": "message",
+            "text": "Message"
+        },
+        {
+            "slug": "search_client_help",
+            "text": "Find Client by ID, name or email"
+        },
+        {
+            "slug": "search_client",
+            "text": "Search Clients"
+        },
+        {
+            "slug": "create_ticket_guest",
+            "text": "Create ticket as a guest"
+        },
+        {
+            "slug": "email_exists_login",
+            "text": "An account with that email address already exists, please login before creating the ticket."
+        },
+        {
+            "slug": "support_department_id",
+            "text": "Support Department"
+        },
+        {
+            "slug": "select_client",
+            "text": "Select Client"
+        },
+        {
+            "slug": "widget_support_desk_active_tickets",
+            "text": "Active Tickets"
+        },
+        {
+            "slug": "assigned_staff",
+            "text": "Assigned Staff"
+        },
+        {
+            "slug": "assign_staff",
+            "text": "Assign Staff"
+        },
+        {
+            "slug": "select_staff",
+            "text": "Select Staff"
+        },
+        {
+            "slug": "supportdesk_settings",
+            "text": "Support Desk Settings"
+        },
+        {
+            "slug": "supportdesk_auto_close",
+            "text": "Enable ticket auto close"
+        },
+        {
+            "slug": "supportdesk_close_inactivity",
+            "text": "Inactivity period"
+        },
+        {
+            "slug": "supportdesk_auto_close_desc",
+            "text": "Set the number of seconds a ticket has to be inactive before automatically closing the ticket."
+        },
+        {
+            "slug": "automation_ticket_close",
+            "text": "AUTOMATED MESSAGE: This thread has been closed due to inactivity."
+        },
+        {
+            "slug": "automation",
+            "text": "Automation"
+        }
+    ],
+    "EmailTemplates": {
+        "client_support_ticket_reply": {
+            "slug": "client_support_ticket_reply",
+            "EmailTemplateTranslation": {
+                "subject": "Support Ticket Reply Notification",
+                "html_body_default": "<p>Dear {{client.first_name}} {{client.last_name}},<\/p> <p>Your support ticket at {{settings.general.sitename}} has had a new post and the status is now {{status}}.<\/p> <p>You can view the ticket by visiting the following link: <a href=\"{{ticket_url}}\">{{ticket_url}}<\/a> or see the message below.<\/p> <p>{{{ticket_post}}}<\/p> <p>{{{settings.mail.email_signature_html}}}<\/p>",
+                "html_body": "<p>Dear {{client.first_name}} {{client.last_name}},<\/p> <p>Your support ticket at {{settings.general.sitename}} has had a new post and the status is now {{status}}.<\/p> <p>You can view the ticket by visiting the following link: <a href=\"{{ticket_url}}\">{{ticket_url}}<\/a> or see the message below.<\/p> <p>{{{ticket_post}}}<\/p> <p>{{{settings.mail.email_signature_html}}}<\/p>",
+                "plaintext_body_default": "Dear {{client.first_name}} {{client.last_name}},\r\n\r\nYour support ticket at {{settings.general.sitename}} has had a reply and the status is now {{status}}.\r\n\r\nYou can view the ticket by visiting the following link: {{ticket_url}} or see the message below\r\n\r\n{{ticket_post}}\r\n\r\n{{settings.mail.email_signature_plaintext}}\t",
+                "plaintext_body": "Dear {{client.first_name}} {{client.last_name}},\r\n\r\nYour support ticket at {{settings.general.sitename}} has had a reply and the status is now {{status}}.\r\n\r\nYou can view the ticket by visiting the following link: {{ticket_url}} or see the message below\r\n\r\n{{ticket_post}}\r\n\r\n{{settings.mail.email_signature_plaintext}}\t"
+            },
+            "name": "Client Support Ticket New Reply",
+            "available_tags": "client.first_name,client.last_name,status,ticket_url,ticket_post,settings.general.sitename,settings.mail.email_signature_html,settings.mail.email_signature_plaintext"
+        },
+        "admin_support_ticket_reply": {
+            "slug": "admin_support_ticket_reply",
+            "EmailTemplateTranslation": {
+                "subject": "Support Ticket Reply Notification",
+                "html_body_default": "<p>The following support ticket at {{settings.general.sitename}} has had a post and the status is now {{status}}.<\/p> <p>You can view the ticket by visiting the following link: <a href=\"{{ticket_url}}\">{{ticket_url}}<\/a> or see the message below.<\/p> <p>{{{ticket_post}}}<\/p>",
+                "html_body": "<p>The following support ticket at {{settings.general.sitename}} has had a post and the status is now {{status}}.<\/p> <p>You can view the ticket by visiting the following link: <a href=\"{{ticket_url}}\">{{ticket_url}}<\/a> or see the message below.<\/p> <p>{{{ticket_post}}}<\/p>",
+                "plaintext_body_default": "The following support ticket at {{settings.general.sitename}} has had a reply and the status is now {{status}}.\r\n\r\nYou can view the ticket by visiting the following link: {{ticket_url}} or see the message below.\r\n\r\n{{ticket_post}}",
+                "plaintext_body": "The following support ticket at {{settings.general.sitename}} has had a reply and the status is now {{status}}.\r\n\r\nYou can view the ticket by visiting the following link: {{ticket_url}} or see the message below.\r\n\r\n{{ticket_post}}"
+            },
+            "name": "Admin Support Ticket Reply",
+            "available_tags": "ticket_url,status,ticket_post,settings.general.sitename,settings.mail.email_signature_html,settings.mail.email_signature_plaintext"
+        },
+        "admin_support_ticket_assign": {
+            "slug": "admin_support_ticket_assign",
+            "EmailTemplateTranslation": {
+                "subject": "Assigned to Support Ticket",
+                "html_body_default": "<p>You have been assigned to a support ticket at {{settings.general.sitename}}.<\/p> <p>View the ticket at <a href=\"{{ticket_url}}\">{{ticket_url}}<\/a><\/p>",
+                "html_body": "<p>You have been assigned to a support ticket at {{settings.general.sitename}}.<\/p> <p>View the ticket at <a href=\"{{ticket_url}}\">{{ticket_url}}<\/a><\/p>",
+                "plaintext_body_default": "You have been assigned to a support ticket at {{settings.general.sitename}}.\r\n\r\nView the ticket at {{ticket_url}}",
+                "plaintext_body": "You have been assigned to a support ticket at {{settings.general.sitename}}.\r\n\r\nView the ticket at {{ticket_url}}"
+            },
+            "name": "Staff Assigned to support ticket",
+            "available_tags": "ticket_url,settings.general.sitename,settings.mail.email_signature_html,settings.mail.email_signature_plaintext"
+        }
+    }
+}
